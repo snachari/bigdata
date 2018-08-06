@@ -1,0 +1,22 @@
+                Map Reduce Framework- Word Count Porgram
+    Steps in writing map reduce program::
+
+1.Start eclipse, create a new java project (give name as wordcount)
+2.we are developing a map reduce program, so we need to import the map reduce library jar files
+    i.right click on wordcount project-> build path -> configure build path -> a popup opens
+    ii.select libraries tab -> add external jars -> browse to the below folders and add only jar files.
+         >hadoop installation dir -> share -> hadoop 
+                   1.common 
+                   2.common -> lib
+                   3.hdfs
+                   4.mapreduce
+                   5.yarn
+3.Write Mapper program, Reducer program and Driver program.
+4.Make sure all errors are handled
+5.Compile the java files and create a jar file
+    i.right click on the project -> export -> select java->jar -> give a name to the jar file
+6.run the jar file using command line clients hadoop jar or yarn jar command, below is the syntax.
+     >yarn  jar   path_of_jarfile/jar_file_name.jar   
+     >mainclassfilename(without .java or .class)   
+     >inputfile_or_folder(args[0])   
+     >output_folder_name(args[1])
